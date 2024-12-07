@@ -38,4 +38,7 @@ class vector2():
         return vector2(self.X ** obj, self.Y ** obj)
     
     def dot_product(self, obj: 'vector2') -> int|float:
-        return self.x * obj.x + self.y * obj.y
+        return self.X * obj.X + self.Y * obj.Y
+    
+    def magnitude(self) -> int|float:
+        return ((self. X ** 2) + (self. Y ** 2)) ** 0.5

@@ -6,6 +6,8 @@
 2] now do the same for all the groups of objects till only 1 net force value is left to add
 3] based upon the distance between each obj/center of mass, their netforce addition will decrease,ie) higher distance = lower netforce addition 
 
+3) Create a 3d simulation on a 2d plane by changing all vector2 to vector3 and drawing the circles using a visibleradius variable which decrease the further away from 0 the Z axis is and change all the calculations to work with a vector3
+
 end-point ideas (implent after completing the project)
 
 1) Using the Schwarzschild radius formual immediately convert a planet into a new object if it meets thr critera (Sr > min Sm, S = Schwarzschild)

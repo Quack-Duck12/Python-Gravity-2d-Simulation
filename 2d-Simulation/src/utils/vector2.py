@@ -36,6 +36,9 @@ class vector2():
 
     def __exp__(self, obj: int|float):
         return vector2(self.X ** obj, self.Y ** obj)
+
+    def __str__(self):
+        return f"vector2{self.Value}"
     
     def dot_product(self, obj: 'vector2') -> int|float:
         return self.X * obj.X + self.Y * obj.Y

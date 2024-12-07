@@ -1,0 +1,5 @@
+1) make collision function work properly and remove any need for Planet.RECT (delete it)
+
+end-point ideas (implent after completing the project)
+
+1) Using the Schwarzschild radius formual immediately convert a planet into a new object if it meets thr critera (Sr > min Sm, S = Schwarzschild)

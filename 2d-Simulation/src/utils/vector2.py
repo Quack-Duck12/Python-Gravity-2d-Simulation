@@ -22,25 +22,19 @@ class vector2():
     def __sub__(self, obj: 'vector2'):
         return vector2(self.X - obj.X, self.Y - obj.Y)
     
-    def __mul__(self, obj):
-        if isinstance(obj, vector2):
-            return vector2(self.X * obj.X, self.Y * obj.Y)
+    def __mul__(self, obj: int|float):
         return vector2(self.X * obj, self.Y * obj)
     
-    def __truediv__(self, obj):
-        if isinstance(obj, vector2):
-            try: return vector2(self.X / obj.X, self.Y / obj.Y)
-            except: return vector2(0, 0)
-        else:
-            if obj != 0:
-                X = self.X / obj
-                Y = self.Y /obj
-                return(vector2(X, Y))
-            else: 
-                raise(f"Can't Divide The pos of {self} By 0")
+    def __truediv__(self, obj: int|float):
+        if obj != 0:
+            X = self.X / obj
+            Y = self.Y / obj
+            return(vector2(X, Y))
+        else: 
+            raise(f"Can't Divide The pos of {self} By 0")
 
-    def __exp__(self, obj: 'vector2'):
-        return vector2(self.X ** obj.X, self.Y ** obj.Y)
+    def __exp__(self, obj: int|float):
+        return vector2(self.X ** obj, self.Y ** obj)
     
     def dot_product(self, obj: 'vector2') -> int|float:
         return self.x * obj.x + self.y * obj.y

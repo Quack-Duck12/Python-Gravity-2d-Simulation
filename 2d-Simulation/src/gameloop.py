@@ -12,7 +12,7 @@ def game_loop():
     SCREEN_SIZE: tuple = (int(DISPLAY_SIZE[0] / 4), int(DISPLAY_SIZE[1] / 4))
 
     SCREEN = pygame.display.set_mode(SCREEN_SIZE)
-    DISPLAY = pygame.display.set_mode(DISPLAY_SIZE, )
+    DISPLAY = pygame.display.set_mode(DISPLAY_SIZE)
 
     pygame.display.set_caption("Python 2d gravity simulation")
 

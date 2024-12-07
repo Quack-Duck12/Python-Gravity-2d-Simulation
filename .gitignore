@@ -159,3 +159,7 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 2d-Simulation/tempCodeRunnerFile.py
+2d-Simulation/src/utils/test.py
+2d-Simulation/src/test.py
+2d-Simulation/test.py
+test.py

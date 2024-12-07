@@ -10,4 +10,4 @@
 
 end-point ideas (implent after completing the project)
 
-1) Using the Schwarzschild radius formual immediately convert a planet into a new object if it meets thr critera (Sr > min Sm, S = Schwarzschild)
+1) Using the Schwarzschild radius formual immediately convert a planet into a new object if it meets thr critera (Current R >= Schwarzschild radius,calculated using mass )

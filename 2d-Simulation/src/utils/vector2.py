@@ -3,17 +3,18 @@ class vector2():
         
         self.X: int|float = Xpos
         self.Y: int|float = Ypos
-
-    def Value(self):
-        return (self.X, self.Y)
+        self.Value: tuple = (Xpos, Ypos)
 
     def setX(self, Xpos: int | float):
         self.X: int|float = Xpos
+        self.Value: tuple = (self.X, self.Y)
 
     def setY(self, Ypos: int | float):
         self.Y: int|float = Ypos
+        self.Value: tuple = (self.X, self.Y)
     
     def setValue(self, Xpos: int | float, Ypos: int | float):
+        self.Value: tuple = (Xpos, Ypos)
         self.X: int|float = Xpos
         self.Y: int|float = Ypos
 

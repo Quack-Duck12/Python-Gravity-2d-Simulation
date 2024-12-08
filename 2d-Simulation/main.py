@@ -1,4 +1,4 @@
-from gamecode import gameloop
+from gamecode.gameloop import gameloop
 
 def main(): gameloop()
 

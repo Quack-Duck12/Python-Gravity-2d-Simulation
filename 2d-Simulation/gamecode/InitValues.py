@@ -13,10 +13,10 @@ pygame.init()
 def Screens():
 
     Info = pygame.display.Info()
-    SCREEN_SIZE: tuple = (Info.current_w - 20, Info.current_h - 20, )
+    SCREEN_SIZE: tuple = (Info.current_w - 50, Info.current_h - 50)
     del Info
 
-    Real_Screen = pygame.display.set_mode(SCREEN_SIZE, vsync=True, flags=pygame.FULLSCREEN)
+    Real_Screen = pygame.display.set_mode(SCREEN_SIZE, vsync=True, flags=pygame.RESIZABLE)
 
     return(Real_Screen)
 
@@ -27,7 +27,13 @@ def handle_events(events: 'pygame.event.Event', Obj_List: list):
         
         if event.type == pygame.MOUSEBUTTONDOWN:
             mousepos = pygame.mouse.get_pos()
-            NewPlanet = Planet(mousepos[0], mousepos[1], randint(5,20), 100, vector2((randint(-10,10)),randint(-10,10)))
+            NewPlanet = Planet(
+                mousepos[0],
+                mousepos[1],
+                10,#randint(5,20),
+                0.1,
+                vector2(0,0)#vector2((randint(-10,10)),randint(-10,10))
+                )
             Obj_List.append(NewPlanet)
             
     return [True, Obj_List]

@@ -1,6 +1,6 @@
-from src.gameloop import *
+from gamecode import gameloop
 
-def main():
-    game_loop()
+def main(): gameloop()
 
-if __name__ == "__main__": main()
+if __name__ == '__main__':
+    main()

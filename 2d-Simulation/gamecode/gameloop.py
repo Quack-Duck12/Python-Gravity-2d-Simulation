@@ -26,7 +26,7 @@ def gameloop():
             exit()
 
         for Obj in Obj_list:
-            Obj.Update()
+            Obj.UpdateValues()
             draw(Screen, Obj)
 
         pygame.display.flip()

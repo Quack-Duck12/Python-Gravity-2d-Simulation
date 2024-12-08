@@ -18,7 +18,7 @@ class Planet():
 
         self.COLOUR = (randint(100,255), randint(100,255), randint(100,255))
 
-    def Update(self):
+    def UpdateValues(self):
         self.pos =+ self.velocity
         self.velocity += self.accleration
         self.accleration += self.netforce
@@ -35,3 +35,6 @@ class Planet():
         self.pos += self.velocity
         self.velocity += self.accleration
         self.accleration += self.netforce
+
+    def Pull(self, obj: "Planet"):
+        pass

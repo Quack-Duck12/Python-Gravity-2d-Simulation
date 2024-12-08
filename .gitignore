@@ -163,3 +163,5 @@ cython_debug/
 2d-Simulation/src/test.py
 2d-Simulation/test.py
 test.py
+
+.vscode
